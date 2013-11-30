@@ -1,0 +1,131 @@
+/**
+ * Yaron's
+ */
+
+.page {
+    /*max-width: 600px;*/
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.menu {
+	display:none
+}
+
+
+/*
+	Regular Stuff
+*/
+
+html,body{
+	width:100%;
+	height:100%;
+	font-family:"Calibri";
+}
+
+/*
+	Layout & Positioning
+*/
+
+.main {
+	width: 100%;
+	height: 100%;
+	padding: 0 0 5em 11em;
+	position: relative;
+	display: table;
+}
+
+.center {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*
+	Typography
+*/
+
+a {
+	color:#b9b9b9;
+	/*padding:0 0 1px;*/
+	text-decoration:none;
+	-webkit-transition:color 100ms ease-in-out;
+	-moz-transition:color 100ms ease-in-out;
+	transition:color 100ms ease-in-out;
+}
+
+a:hover{
+	color:#ea002a;
+}
+
+h1 {
+	color:#1b1b1b;
+	font-size:3em;
+	padding: 3px 0 5px 0;
+	display: inline-block;
+	border-right: 2px solid #ea002a;
+	-webkit-animation: 1200ms blink step-end infinite;
+	-moz-animation: 1200ms blink step-end infinite;
+}
+
+h1 a {
+	margin: 0 10px 0 0;
+}
+
+@-webkit-keyframes blink { from, to { border-color: transparent } 50% { border-color: #ea002a } }
+@-moz-keyframes blink { from, to { border-color: transparent } 50% { border-color: #ea002a } }
+
+/*
+	Responsive Design
+*/
+
+@media screen and (max-width: 1050px) {
+	h1 {
+		font-size: 2em;
+	}
+
+	.main {
+		padding: 0 0 6em 5em;
+	}
+}
+@media screen and (max-width: 700px) {
+	h1 	{
+		font-size: 1.6em;
+		border: none;
+	}
+
+	h1 a {
+		display: block;
+		margin: 0 0 5px 0;
+	}
+
+	.home {
+		display:none;
+	}
+
+	.menu	{
+		display: block;
+		border-bottom:1px solid #dadada;
+		background-color:#f8f8f8;
+		position:fixed; width:100%;
+		padding: 0.875em 0;
+		font-size:0.875em;
+		font-family:"ff-tundra-sc-web-pro", Georgia, Times, "Times New Roman", serif;
+		z-index:5;
+		-moz-box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+		box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+	}
+
+
+	.main {
+		padding: 0 0 6em 2em;
+	}
+
+	#text {
+		border-right: 2px solid #ea002a;
+		-webkit-animation: 1200ms blink step-end infinite;
+		-moz-animation: 1200ms blink step-end infinite;
+	}
+}
