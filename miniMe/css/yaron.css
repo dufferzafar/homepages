@@ -1,0 +1,293 @@
+/*
+Theme Name: Yaron Schoen Version 5
+Theme URL: http://yaronschoen.com
+Author: Yaron Schoen
+Author URL: http://yaronschoen.com
+Notes: Still need to fix Retina images.
+*/
+@charset "UTF-8";
+/*
+
+02 Reset
+
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+
+02 Main Layout
+
+*/
+html,
+body {
+    height: 100%;
+    width: 100%;
+	background-color: white
+}
+.wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.cell {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    position: relative;
+}
+.page {
+    max-width: 600px;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+/*
+
+02 Typography
+
+*/
+body,
+input,
+textarea,
+button {
+    font-size: 125%;
+    line-height: 1.5;
+    font-family: "ff-tundra-web-pro", Georgia, Times, "Times New Roman", serif;
+    color: #424242;
+}
+.small { font-size: 0.700em }
+h2 {
+    font-size: 2.000em;
+    line-height: 1.2;
+    margin-bottom: 0.500em;
+}
+a {
+    color: #be005e;
+    padding: 0 1px;
+    text-decoration: none;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+a:hover {
+    color: #be005e;
+    background-color: #fff2f8;
+}
+/*
+
+02 Floats
+
+*/
+.left { float: left }
+.right { float: right }
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+/*
+
+02 Navigation / lists
+
+*/
+.nav { margin-top: 1em }
+ul.nav li {
+    list-style: none;
+    border-bottom: 1px solid #9e004a;
+    width: 100%;
+    z-index: 1;
+}
+ul.nav li:first-child { border-top: 1px solid #9e004a }
+ul.nav li a {
+    color: white;
+    display: block;
+    padding: 10px 0;
+}
+ul.nav li a:hover {
+    background-color: white;
+    color: #be005e;
+    text-indent: 1em;
+}
+ul.nav li a:hover span.arrow { text-indent: -1em }
+.menu-site {
+    width: 44%;
+    float: left;
+}
+.menu-elsewhere {
+    width: 44%;
+    float: right;
+}
+.menu { display: none }
+#table-of-contents {
+    background-color: #be005e;
+    font-family: "ff-tundra-sc-web-pro", Georgia, Times, "Times New Roman", serif;
+    color: #f0b8d2;
+}
+#table-of-contents hr {
+    border-top: 1px solid #9e004a;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    margin: 0.500em 0 1.500em 0;
+}
+/*
+
+02 Form Elements
+
+*/
+input,
+textarea {
+    width: 90%;
+    margin-bottom: 1.000em;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    font-size: 1em;
+    padding: 0.500em;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+input:hover,
+textarea:hover {
+    border: 1px solid #d4dbde;
+    background-color: white;
+}
+input:focus,
+textarea:focus {
+    border: 1px solid #00b6eb;
+    background-color: white;
+    -moz-box-shadow: 0 0 10px rgba(0,182,235, 0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0,182,235, 0.5);
+    box-shadow: 0 0 10px rgba(0,182,235, 0.5);
+}
+/*
+
+02 Media Queries
+
+*/
+@media screen and (max-width: 700px) {
+    body { font-size: 100% }
+    h2 { font-size: 1.8em }
+    .menu {
+        display: block;
+        border-bottom: 1px solid #dadada;
+        background-color: #f8f8f8;
+        position: fixed;
+        width: 100%;
+        padding: 0.875em 0;
+        font-size: 0.875em;
+        font-family: "ff-tundra-sc-web-pro", Georgia, Times, "Times New Roman", serif;
+        z-index: 5;
+        -moz-box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+        -webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+        box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+    }
+    #project-inquiry .menu,
+    #work .menu { position: relative }
+    #table-of-contents .menu {
+        display: block;
+        border: none;
+        background-color: #af0057;
+        position: relative;
+        width: 100%;
+        padding: 0.875em 0;
+        font-size: 0.875em;
+        font-family: "ff-tundra-sc-web-pro", Georgia, Times, "Times New Roman", serif;
+        z-index: 5;
+        margin-bottom: 2em;
+    }
+    #table-of-contents .menu p { font-weight: bold }
+    .home { display: none }
+    .small { font-size: 0.875em }
+    .menu-site {
+        width: 100%;
+        float: none;
+        padding-bottom: 2em;
+    }
+    .menu-elsewhere {
+        width: 100%;
+        float: none;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    body { font-size: 105% }
+}
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+    body { font-size: 115% }
+}
+@media screen and (min-width: 1100px) {
+    body { font-size: 125% }
+}

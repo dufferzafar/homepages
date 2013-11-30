@@ -1,0 +1,49 @@
+/**
+ * TOC Overlay
+ */
+.home {
+	/*top:25px;*/
+	/*left:25px;*/
+	width:80px;
+	height:80px;
+
+	/*border-radius: 50px;*/
+	position:fixed;
+	right:0;
+
+	text-align:center;
+	text-decoration:none;
+
+	background-color:#be005e;
+	color:white;
+
+	z-index:5;
+
+	/*font-size:14px;*/
+	/*border-bottom:0;*/
+	/*display:table;*/
+}
+
+.home:hover {
+	background-color:#231f20;
+	/*color:#be005e;*/
+	color:white;
+}
+
+span.logo {
+	left: -1px;
+	top: 17px;
+	font-family:'Tahoma';
+	font-size:40px;
+	position:relative;
+}
+
+#table-of-contents .home {
+	background-color:#be005e;
+	color:white;
+}
+
+#table-of-contents .home:hover {
+	background-color:#be005e;
+	color:white;
+}
