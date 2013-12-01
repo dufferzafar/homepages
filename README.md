@@ -35,3 +35,7 @@ I don't have any solid ideas ready yet, but then, I never have had...
 This time the task (of stealing) is going to be a bit easy as I know of place which has a dragon stockpile of loot ready for offering - [Codrops](http://tympanus.net/codrops)
 
 If you haven't visited those guys before. Pleas Do. It is a haven for idea thieves like me.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dufferzafar/homepages/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
