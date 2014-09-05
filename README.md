@@ -1,5 +1,7 @@
 # Homepages
 
+*Status: As much as I would like to create a new homepage, I just can't find the time. Life :/*
+
 A collection of homepages that I've used over time. 
 
 The live versions of the pages are hosted [here](http://dufferzafar.github.io/homepages). Go check them out.
